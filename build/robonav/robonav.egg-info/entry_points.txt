@@ -1,0 +1,3 @@
+[console_scripts]
+robot_core_node = robonav.robot_core:main
+
