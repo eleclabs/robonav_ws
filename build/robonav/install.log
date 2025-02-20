@@ -1,10 +1,12 @@
 /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_core.py
+/home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_core1.py
 /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_core2.py
-/home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_core_1.py
+/home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_coreX.py
 /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/__init__.py
 /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/__pycache__/robot_core.cpython-310.pyc
+/home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/__pycache__/robot_core1.cpython-310.pyc
 /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/__pycache__/robot_core2.cpython-310.pyc
-/home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/__pycache__/robot_core_1.cpython-310.pyc
+/home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/__pycache__/robot_coreX.cpython-310.pyc
 /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/__pycache__/__init__.cpython-310.pyc
 /home/eleclabs/ros2_ws/install/robonav/share/ament_index/resource_index/packages/robonav
 /home/eleclabs/ros2_ws/install/robonav/share/robonav/package.xml

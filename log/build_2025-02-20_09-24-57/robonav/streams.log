@@ -1,0 +1,30 @@
+[0.738s] Invoking command in '/home/eleclabs/ros2_ws/src/robonav': PYTHONPATH=/home/eleclabs/ros2_ws/build/robonav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robonav build --build-base /home/eleclabs/ros2_ws/build/robonav/build install --record /home/eleclabs/ros2_ws/build/robonav/install.log --single-version-externally-managed install_data
+[0.941s] running egg_info
+[0.941s] writing ../../build/robonav/robonav.egg-info/PKG-INFO
+[0.941s] writing dependency_links to ../../build/robonav/robonav.egg-info/dependency_links.txt
+[0.941s] writing entry points to ../../build/robonav/robonav.egg-info/entry_points.txt
+[0.942s] writing requirements to ../../build/robonav/robonav.egg-info/requires.txt
+[0.942s] writing top-level names to ../../build/robonav/robonav.egg-info/top_level.txt
+[0.943s] reading manifest file '../../build/robonav/robonav.egg-info/SOURCES.txt'
+[0.944s] writing manifest file '../../build/robonav/robonav.egg-info/SOURCES.txt'
+[0.944s] running build
+[0.944s] running build_py
+[0.944s] copying robonav/robot_core1.py -> /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav
+[0.944s] copying robonav/robot_core2.py -> /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav
+[0.944s] copying robonav/robot_coreX.py -> /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav
+[0.945s] running install
+[0.945s] running install_lib
+[0.945s] copying /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav/robot_core1.py -> /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav
+[0.945s] copying /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav/robot_core2.py -> /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav
+[0.946s] copying /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav/robot_coreX.py -> /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav
+[0.946s] byte-compiling /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_core1.py to robot_core1.cpython-310.pyc
+[0.946s] byte-compiling /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_core2.py to robot_core2.cpython-310.pyc
+[0.947s] byte-compiling /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_coreX.py to robot_coreX.cpython-310.pyc
+[0.948s] running install_data
+[0.949s] running install_egg_info
+[0.950s] removing '/home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav-0.0.0-py3.10.egg-info' (and everything under it)
+[0.950s] Copying ../../build/robonav/robonav.egg-info to /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav-0.0.0-py3.10.egg-info
+[0.951s] running install_scripts
+[0.966s] Installing robot_core_node script to /home/eleclabs/ros2_ws/install/robonav/lib/robonav
+[0.966s] writing list of installed files to '/home/eleclabs/ros2_ws/build/robonav/install.log'
+[0.987s] Invoked command in '/home/eleclabs/ros2_ws/src/robonav' returned '0': PYTHONPATH=/home/eleclabs/ros2_ws/build/robonav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robonav build --build-base /home/eleclabs/ros2_ws/build/robonav/build install --record /home/eleclabs/ros2_ws/build/robonav/install.log --single-version-externally-managed install_data

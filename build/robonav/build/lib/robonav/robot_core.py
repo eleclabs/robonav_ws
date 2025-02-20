@@ -1,9 +1,10 @@
 import rclpy
 from rclpy.node import Node
 
-from geometry_msgs.msg import Twist, Post2D
+from geometry_msgs.msg import Twist, Pose2D, TransformStamped
 from std_msgs.msg import Float32, Int32
 from nav_msgs.msg import Odometry
+import tf2_ros
 
 import math
 
@@ -41,12 +42,15 @@ class Robot(Node):
 
 		#odometry
 		self.tick_per_rev = 2800
-		self.robot_post = Post2D()   #x y theta
+		self.robot_pose = Pose2D()   #x y theta
 		self.dx = 0.0
 		self.dy = 0.0
 		self.dtheta = 0.0
 
 		self.odom_pub = self.create_publisher(Odometry, "odom", 10)
+
+		#TF
+		self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
 
 		self.get_logger().info("robot core is running")
 	
@@ -153,14 +157,14 @@ class Robot(Node):
 		self.dy = DC*math.sin(prev_robot_pose.theta)
 		self.dtheta = (DR - DL)/L
 
-		new_robot_pose = Post2D()
+		new_robot_pose = Pose2D()
 		new_robot_pose.x = prev_robot_pose.x + self.dx
 		new_robot_pose.y = prev_robot_pose.y + self.dy
 		new_robot_pose.theta = prev_robot_pose.theta + self.dtheta
 
-		self.robot_post.x = new_robot_pose.x
-		self.robot_post.y = new_robot_pose.y
-		self.robot_post.theta = new_robot_pose.theta
+		self.robot_pose.x = new_robot_pose.x
+		self.robot_pose.y = new_robot_pose.y
+		self.robot_pose.theta = new_robot_pose.theta
 
 		self.left_tick["bf"] = tick["l"]
 		self.right_tick["bf"] = tick["r"]
@@ -170,8 +174,8 @@ class Robot(Node):
 		odom.header.stamp = self.get_clock().now().to_msg()
 		odom.header.frame_id = "odom"
 		odom.child_frame_id = "base_link"
-		odom.pose.pose.position.x = self.robot_post.x
-		odom.pose.pose.position.y = self.robot_post.y
+		odom.pose.pose.position.x = self.robot_pose.x
+		odom.pose.pose.position.y = self.robot_pose.y
 		odom.pose.pose.position.z = 0.0
 
 		quat = self.quaternion_from_euler(0.0,0.0, self.robot_pose.theta)
@@ -185,6 +189,22 @@ class Robot(Node):
 		odom.pose.covariance[35]  = 0.001
 
 		self.odom_pub.publish(odom)
+
+		t = TransformStamped()
+		t.header.stamp = self.get_clock().now().to_msg()
+		t.header.frame_id = "odom"
+		t.child_frame_id = "base_link"
+		t.transform.translation.x = self.robot_pose.x
+		t.transform.translation.y = self.robot_pose.y
+		t.transform.translation.z = 0.0
+
+		t.transform.rotation.w = quat[0]
+		t.transform.rotation.x = quat[1]
+		t.transform.rotation.y = quat[2]
+		t.transform.rotation.z = quat[3]
+
+		self.tf_broadcaster.sendTransform(t)
+
 
 		self.last_time = ts
 

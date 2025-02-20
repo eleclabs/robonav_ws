@@ -12,8 +12,9 @@ launch/robot_bringup.launch.py
 resource/robonav
 robonav/__init__.py
 robonav/robot_core.py
+robonav/robot_core1.py
 robonav/robot_core2.py
-robonav/robot_core_1.py
+robonav/robot_coreX.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

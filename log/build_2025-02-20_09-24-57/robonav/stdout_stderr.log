@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/robonav/robonav.egg-info/PKG-INFO
+writing dependency_links to ../../build/robonav/robonav.egg-info/dependency_links.txt
+writing entry points to ../../build/robonav/robonav.egg-info/entry_points.txt
+writing requirements to ../../build/robonav/robonav.egg-info/requires.txt
+writing top-level names to ../../build/robonav/robonav.egg-info/top_level.txt
+reading manifest file '../../build/robonav/robonav.egg-info/SOURCES.txt'
+writing manifest file '../../build/robonav/robonav.egg-info/SOURCES.txt'
+running build
+running build_py
+copying robonav/robot_core1.py -> /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav
+copying robonav/robot_core2.py -> /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav
+copying robonav/robot_coreX.py -> /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav
+running install
+running install_lib
+copying /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav/robot_core1.py -> /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav
+copying /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav/robot_core2.py -> /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav
+copying /home/eleclabs/ros2_ws/build/robonav/build/lib/robonav/robot_coreX.py -> /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav
+byte-compiling /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_core1.py to robot_core1.cpython-310.pyc
+byte-compiling /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_core2.py to robot_core2.cpython-310.pyc
+byte-compiling /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav/robot_coreX.py to robot_coreX.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/robonav/robonav.egg-info to /home/eleclabs/ros2_ws/install/robonav/lib/python3.10/site-packages/robonav-0.0.0-py3.10.egg-info
+running install_scripts
+Installing robot_core_node script to /home/eleclabs/ros2_ws/install/robonav/lib/robonav
+writing list of installed files to '/home/eleclabs/ros2_ws/build/robonav/install.log'
